@@ -1,7 +1,6 @@
-from pathlib import Path
+
 
 def write_file(file_name, file_content):
-    # Convert PosixPath object to string
     file_name = str(file_name)
     
     # Add the file extension to the file_name
@@ -12,7 +11,6 @@ def write_file(file_name, file_content):
         file.write(file_content)
 
 def append_file(file_name, append_content):
-    # Convert PosixPath object to string
     file_name = str(file_name)
     
     # Add the file extension to the file_name
@@ -23,7 +21,6 @@ def append_file(file_name, append_content):
         file.write("\n" + append_content)
 
 def read_file(file_name):
-    # Convert PosixPath object to string
     file_name = str(file_name)
     
     # Add the file extension to the file_name
